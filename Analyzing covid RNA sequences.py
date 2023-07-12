@@ -298,13 +298,14 @@ comparison_df
 
 
 #How the sequences align to the reference sequence:
+#iloc[] rabbing the desired column(here-1st col) of the matrix
 comparison_df.iloc[:,0]/29903
 
 
 # In[55]:
 
 
-#Sequence Mismatches(Mutation points)
+#Checking for Sequence Mismatches(Mutation points)
 s1 = seq_data["NC_045512.2"]["parsed"].seq
 s2 = seq_data["OM095411.1"]["parsed"].seq
 omi_align = aligner.align(s1,  s2)
@@ -313,24 +314,28 @@ omi_align = aligner.align(s1,  s2)
 # In[56]:
 
 
+#Pairwise alignement object is actually a list
 omi_align
 
 
 # In[63]:
 
 
+#pick the 1st element
 omi_aligns=omi_align[0]
 
 
 # In[64]:
 
 
+#This shows the no. of sequences we aligned(here we aligned 2 sequences and 29966 aligned)
 omi_aligns.shape
 
 
 # In[65]:
 
 
+#Actual points where the sequences aligned(list of lists(2 lists))
 omi_aligns.aligned
 
 
@@ -339,11 +344,13 @@ omi_aligns.aligned
 
 #Loop through the 2 sequences and figure out mismatches:
 #zip takes 1st element from both the seq and wants them together in one list, then 2nd element from both and puts them in list 2, and so on)
-s1_end = None
+s1_end = None  
 s2_end = None
 for alignments in zip(omi_aligns.aligned[0], omi_aligns.aligned[1]):
     
     if s1_end and s2_end:
+ #below shows all the mismatches, the list before showed all the alignments from both the sequences
+#but this will show the points from the end of 1st alignment to the start of next alignment, which are basically mis aligned points(mismatches)
         s1_mismatch = s1[s1_end:alignments[0][0]]
         s2_mismatch = s2[s2_end:alignments[1][0]]
         print("1: {}".format(s1_mismatch))
@@ -356,13 +363,14 @@ for alignments in zip(omi_aligns.aligned[0], omi_aligns.aligned[1]):
 # In[67]:
 
 
+#display data in html format(color coding)
 from IPython.display import HTML
 
 
 # In[68]:
 
 
-
+#
 def color_print(s, color='black'):
     return "<span style='color:{}'>{}</span>".format(color, s)
 
@@ -374,16 +382,20 @@ s1_end = None
 s2_end = None
 display_seq = []
 for alignments in zip(omi_aligns.aligned[0], omi_aligns.aligned[1]):
-    
+#    
     if s1_end and s2_end:
         s1_mismatch = s1[s1_end:alignments[0][0]]
         s2_mismatch = s2[s2_end:alignments[1][0]]
+# deletion from seq 2 while refereing to seq 1
         if len(s2_mismatch)==0:
             display_seq.append(color_print(s1[s1_end:alignments[0][0]], "red"))
+#insertion in sequence 2 as it cannot be seen in reference seq 1
         elif len(s1_mismatch)==0:
             display_seq.append(color_print(s2[s2_end:alignments[1][0]], "green"))
+#substitution in seq 2
         else:
             display_seq.append(color_print(s2[s2_end:alignments[1][0]], "blue"))
+#in case of no mismatches:
     display_seq.append(s1[alignments[0][0]:alignments[0][1]])
     s1_end = alignments[0][1]
     s2_end = alignments[1][1]
@@ -392,13 +404,21 @@ for alignments in zip(omi_aligns.aligned[0], omi_aligns.aligned[1]):
 # In[70]:
 
 
+# Join the display sequence, so converting it into strings first
 display_seq = [str(i) for i in display_seq]
 
 
 # In[71]:
 
 
+#Displaying in HTML format:
 display(HTML('<br>'.join(display_seq)))
+
+#Results:
+#Black- points of sequences that align 
+#Red-   points deleted in the Omicron Variant
+#Green- points inserted in the Omicron Variant
+#Blue-  points substituted in the Omicron Variant 
 
 
 # In[ ]:
