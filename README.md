@@ -5,7 +5,7 @@ I.[Introduction](#Introduction)
 II.[Dataset](#Dataset)
 III.[Data Preparation](#Data Preparation)
 IV.[Exploratory Data Analysis](#Exploratory Data Analysis)
-V. [Identifying the RNA sequences to be downloaded, for analysis](#Identifying the RNA sequences to be downloaded, for analysis)
+V. [Selecting RNA for analysis](#Selecting RNA for analysis)
 VI. [Downloading the identified RNA Sequences](#Downloading the identified RNA Sequences)
 VII. [RNA Sequences Alignment(Needleman Wunsch Algorithm)](#RNA Sequences Alignment(Needleman Wunsch Algorithm)
 VIII. [Results](#Results)
@@ -26,14 +26,14 @@ The drive link for the dataset can be found here: https://drive.google.com/file/
 
 The Dataset consisted of 847,791 records and  17 attributes.
 
-III. Data Preparation:
+III. Data_Preparation:
 --
 Firstly, the metadata of Covid RNA Sequences was loaded in the Pandas data frame.
 Then, the datatypes of each column in the dataset were checked for appropriateness. "Collection Date" column into the appropriate date datatype. 
 And the datatypes of the rest of the columns seemed suitable for analysis.
 Further, the "Geolocation" column was split to obtain the continent name and country name in two separate columns.
 
-IV. Exploratory Data Analysis:
+IV. Exploratory_Data_Analysis:
 --
 1.) At what point in time was the first COVID RNA sequence gathered from each of the continents?
 
@@ -59,7 +59,7 @@ IV. Exploratory Data Analysis:
 --> 
 ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/5c44efe1-4f24-4fde-9a2a-bae0ececf745)
 
- V. Identifying the RNA sequences to be downloaded, for analysis:
+ V. Selecting_RNA_for_analysis:
 --
 Now, we'll analyze the sequences themselves rather than the metadata. To do that, we first need to find some sequences we want to analyze.
 Let's consider the following sequences:
@@ -106,7 +106,7 @@ VIII. Results:
 Applied color coding to show the type of mismatch(deletion, substitution, insertion) more clearly.
 For this, I used color coding in the HTML format using IPython.
 
-Black- points of sequences that align 
+Black- points of sequences that align
 Red-   points deleted in the Omicron Variant
 Green- points inserted in the Omicron Variant
 Blue-  points substituted in the Omicron Variant 
