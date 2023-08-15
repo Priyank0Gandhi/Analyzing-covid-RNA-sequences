@@ -23,18 +23,26 @@ Further, the "Geolocation" column was split to obtain the continent name and cou
 IV. Exploratory Data Analysis:
 --
 1.) At what point in time was the first COVID RNA sequence gathered from each of the continents?
---> ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/e9c17e60-8bc1-42df-8d89-d8cdcb43112c)
+
+--> 
+![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/e9c17e60-8bc1-42df-8d89-d8cdcb43112c)
 
 2.) How many sequences were collected on each continent?
---> ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/28982409-ff2a-4e12-a928-19150e5e4600) ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/9eb2d24a-7f0f-40e0-ac5e-395801b0e1e3)
+
+--> 
+![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/28982409-ff2a-4e12-a928-19150e5e4600) ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/9eb2d24a-7f0f-40e0-ac5e-395801b0e1e3)
 
 3.) How long are the shortest and longest sequences? Look at the outliers, if any, to estimate their representation.
---> ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/ec57a92a-d69a-43df-aebd-8963f8ca8fd5)
+
+--> 
+![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/ec57a92a-d69a-43df-aebd-8963f8ca8fd5)
     Values less than 29639 can be considered outliers.
   Filtered out all the outlier records from the data frame.
     
 4.) How many samples were collected by month? Are there any trends?
---> ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/5c44efe1-4f24-4fde-9a2a-bae0ececf745)
+
+--> 
+![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/5c44efe1-4f24-4fde-9a2a-bae0ececf745)
 
  V. Identifying the RNA sequences to be downloaded, for analysis:
 --
