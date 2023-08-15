@@ -30,7 +30,7 @@ IV. Exploratory Data Analysis:
 2.) How many sequences were collected on each continent?
 
 --> 
-![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/28982409-ff2a-4e12-a928-19150e5e4600) ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/9eb2d24a-7f0f-40e0-ac5e-395801b0e1e3)
+![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/28982409-ff2a-4e12-a928-19150e5e4600)            ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/9eb2d24a-7f0f-40e0-ac5e-395801b0e1e3)
 
 3.) How long are the shortest and longest sequences? Look at the outliers, if any, to estimate their representation.
 
