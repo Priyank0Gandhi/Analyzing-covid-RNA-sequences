@@ -1,23 +1,27 @@
 # Analyzing-covid-RNA-sequences
 
-# Introduction:
+I. Introduction:
+--
 In this project, I have retrieved and analyzed the RNA sequence data of COVID's prominent strains, Delta and Omicron. 
 RNA, a nucleic acid found within every living cell, comprises a single strand composed of diverse arrangements of four nucleotides: uracil, cytosine, adenine, and guanine. 
 This RNA serves as the fundamental blueprint for COVID, facilitating cellular entry and self-replication of the virus.
 
-# Dataset:
+II. Dataset:
+--
 Using the available data from NIH (National Institutes of Health), the federal government agency in the U.S.
 Documentation of the data is available here: https://www.ncbi.nlm.nih.gov/datasets/docs/v1/data-packages/sars-cov-2-genome/
 The drive link for the dataset can be found here: https://drive.google.com/file/d/1S2ZDjdRkY78kZxBtc9YNUh0mByTHXQ23/view
 
 The Dataset consisted of 847,791 records and  17 attributes.
 
-# Data Preparation:
+III. Data Preparation:
+--
 Firstly, the metadata of Covid RNA Sequences was loaded in the Pandas data frame.
 Then, the datatypes of each column in the dataset were checked for appropriateness. "Collection Date" column into the appropriate date datatype. And the datatypes of the rest of the columns seemed suitable for analysis.
 Further, the "Geolocation" column was split to obtain the continent name and country name in two separate columns.
 
-# Exploratory Data Analysis:
+IV. Exploratory Data Analysis:
+--
 1.) At what point in time was the first COVID RNA sequence gathered from each of the continents?
 --> ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/e9c17e60-8bc1-42df-8d89-d8cdcb43112c)
 
@@ -32,7 +36,7 @@ Further, the "Geolocation" column was split to obtain the continent name and cou
 4.) How many samples were collected by month? Are there any trends?
 --> ![image](https://github.com/Priyank0Gandhi/Analyzing-covid-RNA-sequences/assets/96395339/5c44efe1-4f24-4fde-9a2a-bae0ececf745)
 
- Identifying the RNA sequences to be downloaded, for analysis:
+ V. Identifying the RNA sequences to be downloaded, for analysis:
 --
 
 
