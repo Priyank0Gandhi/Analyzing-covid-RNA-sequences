@@ -3,11 +3,11 @@
 ## Table of Contents:
 I.[Introduction](#Introduction)
 II.[Dataset](#Dataset)
-III.[Data Preparation](#Data Preparation)
-IV.[Exploratory Data Analysis](#Exploratory_Data_Analysis)
-V. [Selecting_RNA for analysis](#Selecting_RNA_for_analysis)
-VI. [Downloading the identified RNA Sequences](#Downloading the identified RNA Sequences)
-VII. [RNA Sequences Alignment(Needleman Wunsch Algorithm)](#RNA Sequences Alignment(Needleman Wunsch Algorithm)
+III.[Data_Preparation](#Data_Preparation)
+IV.[Exploratory_Data_Analysis](#Exploratory_Data_Analysis)
+V. [Selecting_RNA_for_analysis](#Selecting_RNA_for_analysis)
+VI. [Downloading_the_identified_RNA_Sequences](#Downloading_the_identified_RNA_Sequences)
+VII. [RNA_Sequences_Alignment(Needleman-Wunsch_Algorithm)](#RNA_Sequences_Alignment(Needleman-Wunsch_Algorithm))
 VIII. [Results](#Results)
 IX. [References](#References)
 
@@ -76,13 +76,13 @@ I was able to filter out a total of 6 sequences, based on the above conditions.
 
 Pulled out that metadata in a new Pandas Dataframe.
 
-VI. Downloading the identified RNA Sequences:
+VI. Downloading_the_identified_RNA_Sequences:
 --
 Used the "Biopython" library to retrieve the RNA sequence data through their accession no.
 
 Converted the genomic sequences from FASTA to a more readable format, to be able to work easily during the Analysis.
 
-VII. RNA Sequences Alignment(Needleman Wunsch Algorithm):
+VII. RNA_Sequences_Alignment(Needleman-Wunsch_Algorithm):
 --
 Aligning the retrieved RNA sequences facilitated analyzing the mutations in RNA sequences over a period of time and in different places of the world.
 
