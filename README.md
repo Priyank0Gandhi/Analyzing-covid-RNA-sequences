@@ -1,15 +1,15 @@
 # Analyzing-covid-RNA-sequences
 
 ## Table of Contents:
-I.[Introduction]
-II.[Dataset]
-III.[Data Preparation]
-IV.[Exploratory Data Analysis]
-V. [Identifying the RNA sequences to be downloaded, for analysis]
-VI. [Downloading the identified RNA Sequences]
-VII. [RNA Sequences Alignment(Needleman Wunsch Algorithm)]
-VIII. [Results]
-IX. [References]
+I.[Introduction](#Introduction)
+II.[Dataset](#Dataset)
+III.[Data Preparation](#Data Preparation)
+IV.[Exploratory Data Analysis](#Exploratory Data Analysis)
+V. [Identifying the RNA sequences to be downloaded, for analysis](#Identifying the RNA sequences to be downloaded, for analysis)
+VI. [Downloading the identified RNA Sequences](#Downloading the identified RNA Sequences)
+VII. [RNA Sequences Alignment(Needleman Wunsch Algorithm)](#RNA Sequences Alignment(Needleman Wunsch Algorithm)
+VIII. [Results](#Results)
+IX. [References](#References)
 
 
 ## I. Introduction:
