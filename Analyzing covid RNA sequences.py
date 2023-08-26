@@ -9,8 +9,6 @@ python_version()
 
 
 # In[2]:
-
-
 get_ipython().system('pip install ipython')
 get_ipython().system('pip install biopython')
 get_ipython().system('pip install pandas')
